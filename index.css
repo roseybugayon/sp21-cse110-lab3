@@ -1,0 +1,105 @@
+* {
+    background-color: #FAF9F6;
+}
+
+html { /* Changes the content on all the html file */
+    font-family: "EB Garamond", serif;
+    margin: 10px 20px 10px 20px;
+    color: rgb(60, 60, 60);
+}
+
+.sectionTitle { /* Handles all the section titles for the days */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 15%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(60, 60, 60);
+    border-radius: 8px;
+}
+
+.list { /* any list of items would be with this type of box model */
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 5px 5px 5px;
+}
+
+#newEntry { /* styling for the new entry form title */
+    text-align: center;
+    margin: auto;
+}
+
+body h5 { /* places title in the center for more appealing look */
+    text-align: center;
+    font-size: 125%;
+    display: block;
+    position: relative;
+}
+
+h2.sectionTitle:hover { /* makes these elements turn pink when hovered over */
+    background-color: #ffdfd3;
+}
+
+p, img { /* positions these elements to be in their default positions */
+    position: static;
+}
+
+video { /* changes size of video frame */
+    width: 30%;
+    height: 300px;
+}
+
+p {
+    max-width: 100%;
+    min-width: 50%;
+}
+
+a:active { /* makes the background of the link appear light pink when pressed on */
+    background-color: hsl(316, 100%, 94%);
+}
+
+fieldset { /* grid container */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6;
+    margin-left: -15px;
+}
+
+.item { /* items in the grid */
+    padding: 10px;
+    grid-template-rows: auto;
+    grid-row-start: 1;
+}
+
+div img {
+   width: 30%;
+   height: 300px;
+}
+
+.container { /* container for flex box */
+    display: flex;
+}
+
+li.list { /* children of flexbox */
+    flex-basis: auto;
+    flex-flow: column wrap;
+    align-items: stretch;
+}
+
+footer > nav { /* the nav element within the footer element will be aligned in the center */
+    text-align: center;
+}
+
+h3 + p { /* paragraph elements coming immediately after an h3 heading will be size 13 font */
+    font-size: 18px;
+}
+
+h2 ~ h3 { /* h3 elements that are siblings of and coming after any h2 elements will be size 27 font */
+    font-size: 27px;
+}
+
+
